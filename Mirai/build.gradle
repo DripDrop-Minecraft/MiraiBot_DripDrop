@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'club.txyminecraft'
-version '2.2.2'
+version '2.2.4'
 
 repositories {
     mavenCentral()

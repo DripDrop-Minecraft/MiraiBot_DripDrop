@@ -12,8 +12,7 @@ suspend fun main() {
     val mcPing = MinecraftPing()
     val ip1 = "txyminecraft.club:25565"
     val ip2 = "http://txyminecraft.club:8123"
-    val ip3 = "https://git-a-live.github.io/item_wiki.github.io/"
-    val ip4 = "https://git-a-live.github.io/itas.github.io/"
+    val ip3 = "http://neverlag.gitee.io/minecraft-wiki"
 
     println("QQ号：")
     val qqId = readLine()?.toLong()//Bot的QQ号
@@ -34,12 +33,8 @@ suspend fun main() {
             reply(getServerInfo(mcPing))
         }
 
-        (contains("#wiki") or contains("#百科")) {
-            reply("物品维基：${ip3}")
-        }
-
-        (contains("#faq") or contains("#问题")) {
-            reply("常见问题猛戳这里：${ip4}")
+        (contains("#wiki")) {
+            reply("服务器Wiki猛戳这里：${ip3}")
         }
     }
     miraiBot.join() // 等待 Bot 离线, 避免主线程退出
