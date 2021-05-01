@@ -10,15 +10,17 @@ import net.mamoe.mirai.join
 
 suspend fun main() {
     val mcPing = MinecraftPing()
-    val ip1 = "txyminecraft.club:25565"
-    val ip2 = "http://txyminecraft.club:8123"
-    val ip3 = "http://neverlag.gitee.io/minecraft-wiki"
+    val ip1 = "···"
+    val ip2 = "···"
+    val ip3 = "···"
+    val ip4 = "···"
 
-    println("QQ号：")
-    val qqId = readLine()?.toLong()//Bot的QQ号
-    println("密码：")
-    val password = readLine().toString()//Bot的密码
-    val miraiBot = Bot(qqId!!, password).alsoLogin()//新建Bot并登录
+    print("请输入QQ账号：")
+    val account = readLine()?.replace(Regex("\\s"),"")?.toLong()?:123456
+    print("请输入QQ密码：")
+    val password = readLine()?.replace(Regex("\\s"),"")?:"123456"
+    val miraiBot = Bot(account, password).alsoLogin()
+
     miraiBot.subscribeMessages {
 
         (contains("#ip") or contains("#地址")) {
@@ -34,7 +36,7 @@ suspend fun main() {
         }
 
         (contains("#wiki")) {
-            reply("服务器Wiki猛戳这里：${ip3}")
+            reply("服务器Wiki猛戳这里：\n地址一：${ip3}\n地址二：${ip4}")
         }
     }
     miraiBot.join() // 等待 Bot 离线, 避免主线程退出
@@ -45,7 +47,7 @@ private fun getServerInfo(mcPing: MinecraftPing?): String {
     if (mcPing == null) {
         return "暂时无法获取服务器信息"
     } else {
-        val mcPR = mcPing.getPing("txyminecraft.club")
+        val mcPR = mcPing.getPing("···")
         try {
             runBlocking {
                 sb.append("在线玩家：")

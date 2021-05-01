@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'club.txyminecraft'
-version '2.2.4'
+version '2.2.5'
 
 repositories {
     mavenCentral()
@@ -19,7 +19,7 @@ dependencies {
 }
 
 jar{
-    delete project.buildDir.absolutePath +'/libs/MiraiBot-1.0-SNAPSHOT.jar'
+    delete project.buildDir.absolutePath +'/libs/*.jar'
     baseName 'MiraiBot'
     manifest {
         attributes 'Main-Class': 'club.txyminecraft.MiRaiBotKt'
