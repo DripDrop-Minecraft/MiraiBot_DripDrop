@@ -1,6 +1,6 @@
 # MiraiBot
 
-A Kotlin console project for Minecraft Server DripDrop, based on the open projrct mirai (High-performance bot
+A Kotlin console project for Minecraft server DripDrop, based on the open project mirai (High-performance bot
 framework for Tencent QQ: https://github.com/mamoe/mirai)
 
 This project can be compiled to a jar and run by commands. Users enter their QQ numbers and passwords (plaintext), then
@@ -12,5 +12,7 @@ is, and sends "#ip" to her or in a QQ group, she will reply the IP address such 
 
 Of course, if developers need more features, it is better to research
 the [original project](https://github.com/mamoe/mirai) instead of just forking and modifying this project.
+
+>Attention: I tried to apply Kotlin DSL to gradle scripts but failed, so I have to keep using old groovy statements to compile this project.
 
 
