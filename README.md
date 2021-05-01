@@ -1,6 +1,6 @@
 # MiraiBot
 
-A Kotlin console project for Minecraft Server DripDrop, based on the based on open projrct mirai (High-performance bot
+A Kotlin console project for Minecraft Server DripDrop, based on the open projrct mirai (High-performance bot
 framework for Tencent QQ: https://github.com/mamoe/mirai)
 
 This project can be compiled to a jar and run by commands. Users enter their QQ numbers and passwords (plaintext), then
