@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.mamoe:mirai-core-jvm:2.7.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Gradle/cache/caches/modules-2/files-2.1/net.mamoe/mirai-core-jvm/2.7.0/d7c9c3df7547f415080218263c6b4b993950768e/mirai-core-jvm-2.7.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Gradle/cache/caches/modules-2/files-2.1/net.mamoe/mirai-core-jvm/2.7.0/237031049ad2098c2c881b55eb1af252124ddcb/mirai-core-jvm-2.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

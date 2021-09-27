@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Mirai.iml" filepath="$PROJECT_DIR$/.idea/Mirai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/new_mirai_bot.iml" filepath="$PROJECT_DIR$/.idea/modules/new_mirai_bot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/new_mirai_bot.main.iml" filepath="$PROJECT_DIR$/.idea/modules/new_mirai_bot.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/new_mirai_bot.test.iml" filepath="$PROJECT_DIR$/.idea/modules/new_mirai_bot.test.iml" />
     </modules>
   </component>
 </project>
