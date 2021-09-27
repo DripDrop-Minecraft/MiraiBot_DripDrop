@@ -11,7 +11,7 @@ directly, or just sent in a QQ group. For example, if someone wants to know what
 is, just sends "IP" (or any other command provided by you) to her or in a QQ group, she will reply the IP address such
 as "minecraft.com:1234".
 
-Of course, if developers need more features, it is better to research
+Of course, if developers need more features, it is better to study
 the [original project](https://github.com/mamoe/mirai) instead of just forking and modifying this project.
 
 
