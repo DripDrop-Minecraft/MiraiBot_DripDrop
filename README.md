@@ -3,8 +3,8 @@
 A Kotlin console project for Minecraft server DripDrop, based on the open project mirai (High-performance bot framework
 for Tencent QQ: https://github.com/mamoe/mirai)
 
-This project can be compiled to a jar and run by commands. Users enter their server port, QQ accounts and passwords (
-plaintext), then press Enter and the program will connect to Tencent's servers and tries to log in.
+This project can be compiled to a jar and run by commands. Users enter their server port, QQ accounts and passwords (in
+plain text explicitly), then press Enter and the program will start connecting to Tencent's servers and try to log in.
 
 The bot replies automatically to anyone who sends specific messages on QQ, no matter these messages are sent to her
 directly, or just sent in a QQ group. For example, if someone wants to know what the IP address of your Minecraft server

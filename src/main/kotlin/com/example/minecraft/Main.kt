@@ -4,6 +4,7 @@ import kotlinx.coroutines.runBlocking
 import net.mamoe.mirai.BotFactory
 import net.mamoe.mirai.alsoLogin
 import net.mamoe.mirai.event.events.FriendMessageEvent
+import net.mamoe.mirai.event.events.MessageEvent
 import net.mamoe.mirai.message.data.MessageSource.Key.quote
 import net.mamoe.mirai.message.data.content
 import net.mamoe.mirai.utils.BotConfiguration.MiraiProtocol.ANDROID_PAD
@@ -21,7 +22,7 @@ fun main(args: Array<String>): Unit = runBlocking {
         fileBasedDeviceInfo() // 使用 device.json 存储设备信息
         protocol = ANDROID_PAD // 使用Android平板协议
     }.alsoLogin().eventChannel.apply {
-        subscribeAlways<FriendMessageEvent> {
+        subscribeAlways<MessageEvent> {
             message.apply {
                 content.apply {
                     subject.apply {
